@@ -1,0 +1,48 @@
+/*http://neutralx0.net/home/mini04.html*/
+.red-title {
+  color: red;
+  text-decoration: overline;
+}
+
+.large-title {
+  font-size: 16px;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid--cell {
+  flex: 1;
+  /*border: 1px solid red;*/
+}
+
+.game__container {
+  max-width: 660px;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.game__card:hover {
+  box-shadow:inset 0px 0px 0px 5px #f00;
+  cursor: move;
+}
+
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .game__container {
+      max-width: none;
+      margin: 5px;
+      border:1px solid green;
+  }
+}
+
+

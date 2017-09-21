@@ -1,0 +1,17 @@
+
+.img__logo {
+  max-width: 300px;
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .img__logo {
+    max-width: none;
+  }
+}

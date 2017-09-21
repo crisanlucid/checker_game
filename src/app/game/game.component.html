@@ -1,0 +1,16 @@
+<div class="text-center">
+  <p>
+    game plays!
+  </p>
+  <button (click)="myEvent($event)">My Button</button>
+
+  <div class="game__container">
+    <div class="grid grid--full grid_lg--fit" *ngFor="let row of customArray">
+      <div class="grid--cell" *ngFor="let col of customArray">
+        <div class="game__card">
+          <img class="img-responsive center-block" [src]="populateCardsWithImages('random')" alt="#">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
